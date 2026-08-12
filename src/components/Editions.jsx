@@ -34,7 +34,7 @@ const EDITIONS = [
     size: '50ML',
     stops: ['#3a1c58', '#7a3fb0', '#a468e0'],
     bg: 'radial-gradient(120% 100% at 30% 20%, var(--amethyst), #3a1c58 70%)',
-    image: 'bottles/purple.png', // e.g. '/bottles/dusk-edition.png'
+    image: 'public/bottles/purple.png', // e.g. '/bottles/dusk-edition.png'
   },
   {
     key: 'discovery',
@@ -44,7 +44,7 @@ const EDITIONS = [
     stops: ['#12805c', '#2a4fcc', '#7a3fb0'],
     bg: 'radial-gradient(120% 100% at 30% 20%, var(--ash-charcoal-2), #0b0a0d 70%)',
     // faded: true,
-    image: 'discovery.png', // e.g. '/bottles/discovery-set.png'
+    image: 'public/discovery.png', // e.g. '/bottles/discovery-set.png'
   },
 ];
 
