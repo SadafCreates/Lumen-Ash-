@@ -44,7 +44,7 @@ const EDITIONS = [
     stops: ['#12805c', '#2a4fcc', '#7a3fb0'],
     bg: 'radial-gradient(120% 100% at 30% 20%, var(--ash-charcoal-2), #0b0a0d 70%)',
     // faded: true,
-    image: 'discovery.png', // e.g. '/bottles/discovery-set.png'
+    image: 'bottles/discovery.png', // e.g. '/bottles/discovery-set.png'
   },
 ];
 
