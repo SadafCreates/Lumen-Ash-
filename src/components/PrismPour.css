@@ -1,0 +1,61 @@
+.prism-section {
+  position: relative;
+  height: 420vh;
+  background: var(--ash-black);
+}
+
+.prism-pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prism-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 60% at 50% 55%, rgba(122, 63, 176, 0.18), transparent 70%);
+}
+
+.prism-eyebrow {
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  opacity: 0.85;
+  justify-content: center;
+}
+
+.bottle-wrap {
+  position: relative;
+  z-index: 4;
+  width: min(26vw, 210px);
+}
+
+.beam {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  border-radius: 100px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 0;
+  filter: blur(1px);
+}
+
+.beam-emerald {
+  background: linear-gradient(90deg, rgba(31, 179, 131, 0), var(--emerald-bright));
+}
+
+.beam-sapphire {
+  background: linear-gradient(90deg, rgba(92, 124, 240, 0), var(--sapphire-bright));
+}
+
+.beam-amethyst {
+  background: linear-gradient(90deg, rgba(164, 104, 224, 0), var(--amethyst-bright));
+}

@@ -1,0 +1,34 @@
+.bottle-visual {
+  width: 100%;
+  will-change: transform;
+}
+
+.bottle-visual svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.bottle-glow {
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 46px rgba(164, 104, 224, 0.18));
+}
+
+.bottle-float {
+  animation: bottleBob 6.5s var(--ease-in-out) infinite;
+}
+
+@keyframes bottleBob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.6deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bottle-float {
+    animation: none;
+  }
+}

@@ -1,0 +1,28 @@
+.manifesto {
+  padding: min(24vh, 220px) 8vw;
+  background: var(--ash-black);
+}
+
+.manifesto p {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: clamp(28px, 4.6vw, 58px);
+  line-height: 1.28;
+  max-width: 1100px;
+}
+
+.manifesto .w {
+  color: var(--smoke-dim);
+  transition: color 0.1s;
+}
+
+.manifesto .w.lit {
+  color: var(--bone);
+}
+
+.manifesto .w.gold {
+  background: var(--jewel-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

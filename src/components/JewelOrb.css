@@ -1,0 +1,105 @@
+.jewel-orb {
+  position: relative;
+  border-radius: 50%;
+  pointer-events: none;
+  animation-name: orbFloat;
+  animation-timing-function: var(--ease-in-out);
+  animation-iteration-count: infinite;
+}
+
+.jewel-orb__core {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 32% 28%,
+    var(--orb-bright) 0%,
+    var(--orb-core) 52%,
+    transparent 76%
+  );
+  filter: blur(2px);
+  box-shadow: inset -18px -18px 50px rgba(0, 0, 0, 0.4), inset 14px 14px 34px rgba(255, 255, 255, 0.1),
+    0 0 120px -10px var(--orb-bright);
+}
+
+.jewel-orb__highlight {
+  position: absolute;
+  top: 14%;
+  left: 22%;
+  width: 26%;
+  height: 18%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.85), transparent 70%);
+  filter: blur(4px);
+  animation: orbBreathe 4.5s var(--ease-in-out) infinite;
+}
+
+.jewel-orb__rim {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.jewel-orb__mote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  margin: -2.5px 0 0 -2.5px;
+  border-radius: 50%;
+  background: var(--lumen-gold, #efc373);
+  box-shadow: 0 0 8px 2px var(--lumen-gold, #efc373);
+  animation-name: orbOrbit;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0.75;
+}
+
+@keyframes orbFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4%);
+  }
+}
+
+@keyframes orbBreathe {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes orbOrbit {
+  from {
+    transform: rotate(0deg) translateX(var(--mote-radius)) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.85;
+  }
+  90% {
+    opacity: 0.85;
+  }
+  to {
+    transform: rotate(360deg) translateX(var(--mote-radius)) rotate(-360deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jewel-orb,
+  .jewel-orb__highlight,
+  .jewel-orb__mote {
+    animation: none;
+  }
+}

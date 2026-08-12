@@ -1,0 +1,83 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 5vw;
+  opacity: 0;
+  transform: translateY(-16px);
+  background-color: rgba(11, 10, 13, 0);
+}
+
+.brandmark {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+}
+
+.brandmark .amp {
+  color: var(--lumen-gold);
+  font-style: italic;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.site-header nav a {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--smoke);
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.site-header nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background: var(--lumen-gold);
+  transition: width 0.4s var(--ease-out);
+}
+
+.site-header nav a:hover {
+  color: var(--bone);
+}
+
+.site-header nav a:hover::after {
+  width: 100%;
+}
+
+.nav-cta {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 1px solid var(--smoke-dim);
+  padding: 10px 22px;
+  border-radius: 100px;
+  color: var(--bone);
+  transition: border-color 0.4s, background 0.4s;
+}
+
+.nav-cta:hover {
+  border-color: var(--lumen-gold);
+  background: rgba(239, 195, 115, 0.08);
+}
+
+@media (max-width: 860px) {
+  .site-header nav ul {
+    display: none;
+  }
+}

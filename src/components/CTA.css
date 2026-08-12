@@ -1,0 +1,66 @@
+.cta {
+  position: relative;
+  padding: 180px 8vw;
+  text-align: center;
+  overflow: hidden;
+  background: var(--ash-charcoal);
+}
+
+.cta-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(40% 60% at 20% 30%, rgba(18, 128, 92, 0.25), transparent 60%),
+    radial-gradient(40% 60% at 80% 70%, rgba(122, 63, 176, 0.25), transparent 60%);
+}
+
+.cta h2 {
+  position: relative;
+  font-size: clamp(38px, 7vw, 110px);
+  color: var(--bone);
+}
+
+.cta p {
+  position: relative;
+  color: var(--smoke);
+  margin: 22px auto 44px;
+  max-width: 460px;
+  font-size: 15px;
+}
+
+.magnetic-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 48px;
+  border-radius: 100px;
+  overflow: hidden;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ash-black);
+  background: var(--bone);
+}
+
+.magnetic-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.magnetic-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--jewel-gradient);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.magnetic-btn:hover::before {
+  opacity: 1;
+}
+
+.magnetic-btn:hover {
+  color: var(--bone);
+}

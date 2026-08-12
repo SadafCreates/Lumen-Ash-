@@ -1,0 +1,85 @@
+.notes-section {
+  background: var(--ash-black);
+}
+
+.note-panel {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8vw;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.note-panel .note-copy {
+  position: relative;
+  z-index: 5;
+  max-width: 460px;
+}
+
+.note-panel .note-copy h3 {
+  font-size: clamp(36px, 6vw, 84px);
+  margin: 14px 0 20px;
+  color: var(--bone);
+}
+
+.note-panel .note-copy p {
+  color: var(--smoke);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+.note-list {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+}
+
+.note-list span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bone);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 16px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.note-panel.top {
+  background: linear-gradient(180deg, rgba(18, 128, 92, 0.1), transparent 60%);
+}
+.note-panel.heart {
+  background: linear-gradient(180deg, rgba(42, 79, 204, 0.12), transparent 60%);
+}
+.note-panel.base {
+  background: linear-gradient(180deg, rgba(122, 63, 176, 0.14), transparent 60%);
+}
+
+.note-big-orb {
+  position: absolute;
+  right: 6vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(38vw, 460px);
+}
+
+@media (max-width: 860px) {
+  .note-panel {
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 7vw;
+  }
+  .note-big-orb {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 70vw;
+    margin-top: 40px;
+  }
+}

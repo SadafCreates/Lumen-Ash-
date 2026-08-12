@@ -1,0 +1,135 @@
+:root {
+  --ash-black: #0b0a0d;
+  --ash-charcoal: #17151c;
+  --ash-charcoal-2: #1f1c26;
+  --emerald: #12805c;
+  --emerald-bright: #1fb383;
+  --sapphire: #2a4fcc;
+  --sapphire-bright: #5c7cf0;
+  --amethyst: #7a3fb0;
+  --amethyst-bright: #a468e0;
+  --lumen-gold: #efc373;
+  --bone: #f3eee4;
+  --smoke: #948fa0;
+  --smoke-dim: #615c6c;
+  --jewel-gradient: linear-gradient(120deg, var(--emerald-bright), var(--sapphire-bright) 50%, var(--amethyst-bright));
+  --jewel-gradient-vertical: linear-gradient(180deg, var(--emerald-bright), var(--sapphire-bright) 50%, var(--amethyst-bright));
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--ash-black);
+}
+
+body {
+  background: var(--ash-black);
+  color: var(--bone);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+@media (hover: none) {
+  body {
+    cursor: auto;
+  }
+}
+
+::selection {
+  background: var(--amethyst);
+  color: var(--bone);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.grad-text {
+  background: var(--jewel-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+}
+
+.eyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--smoke);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--jewel-gradient);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.section-pad {
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ash-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--ash-charcoal-2);
+  border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,129 @@
+.hero {
+  position: relative;
+  height: 100svh;
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(60% 50% at 18% 20%, rgba(18, 128, 92, 0.28), transparent 60%),
+    radial-gradient(55% 45% at 82% 24%, rgba(42, 79, 204, 0.26), transparent 60%),
+    radial-gradient(65% 55% at 50% 90%, rgba(122, 63, 176, 0.28), transparent 60%), var(--ash-black);
+}
+
+.hero-orbs {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-orb-pos {
+  position: absolute;
+  opacity: 0.75;
+}
+
+.pos-1 {
+  top: -10%;
+  left: -10%;
+}
+
+.pos-2 {
+  top: 4%;
+  right: -8%;
+}
+
+.pos-3 {
+  bottom: -18%;
+  left: 26%;
+}
+
+.hero-kicker {
+  position: relative;
+  z-index: 5;
+  opacity: 0;
+  justify-content: center;
+}
+
+.hero-title {
+  position: relative;
+  z-index: 5;
+  font-size: clamp(58px, 11vw, 168px);
+  text-align: center;
+  color: var(--bone);
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 0.28em;
+}
+
+.hero-title .word {
+  overflow: hidden;
+  display: flex;
+}
+
+.hero-title .char {
+  display: inline-block;
+}
+
+.hero-sub {
+  position: relative;
+  z-index: 5;
+  margin-top: 22px;
+  max-width: 480px;
+  text-align: center;
+  color: var(--smoke);
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 300;
+  opacity: 0;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 5;
+  opacity: 0;
+}
+
+.hero-scroll .line {
+  width: 1px;
+  height: 46px;
+  background: linear-gradient(var(--smoke), transparent);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-scroll .line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -40%;
+  width: 100%;
+  height: 40%;
+  background: var(--lumen-gold);
+  animation: scrollDrip 2.2s var(--ease-in-out) infinite;
+}
+
+@keyframes scrollDrip {
+  0% {
+    top: -40%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.hero-scroll span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--smoke-dim);
+  text-transform: uppercase;
+}

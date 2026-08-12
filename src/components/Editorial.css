@@ -1,0 +1,28 @@
+.editorial {
+  padding: 220px 8vw;
+  background: var(--ash-black);
+  text-align: center;
+  position: relative;
+}
+
+.editorial blockquote {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(26px, 4vw, 50px);
+  max-width: 920px;
+  margin: 34px auto 0;
+  line-height: 1.45;
+  color: var(--bone);
+}
+
+.editorial cite {
+  display: block;
+  margin-top: 34px;
+  font-style: normal;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--smoke);
+}

@@ -1,0 +1,86 @@
+.editions-section {
+  position: relative;
+  height: 340vh;
+  background: var(--ash-black);
+}
+
+.editions-pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.editions-head {
+  padding: 0 8vw;
+  margin-bottom: 60px;
+}
+
+.editions-head h2 {
+  font-size: clamp(30px, 4.4vw, 54px);
+  color: var(--bone);
+  max-width: 560px;
+}
+
+.editions-track {
+  display: flex;
+  gap: 5vw;
+  padding: 0 8vw;
+  will-change: transform;
+}
+
+.edition-card {
+  flex: 0 0 min(62vw, 520px);
+  position: relative;
+}
+
+.edition-card.is-faded {
+  opacity: 0.6;
+}
+
+.edition-visual {
+  height: 56vh;
+  min-height: 340px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edition-visual > .spinner-stage {
+  width: 100%;
+  height: 100%;
+}
+
+.edition-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+
+.edition-meta h3 {
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--bone);
+}
+
+.edition-meta span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  color: var(--smoke);
+  letter-spacing: 0.08em;
+}
+
+.edition-meta p {
+  color: var(--smoke);
+  font-size: 13px;
+  margin-top: 6px;
+  max-width: 320px;
+  line-height: 1.6;
+}

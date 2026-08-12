@@ -1,0 +1,73 @@
+footer {
+  padding: 70px 8vw 40px;
+  background: var(--ash-charcoal);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.foot-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.foot-brand .brandmark {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.foot-brand .amp {
+  color: var(--lumen-gold);
+  font-style: italic;
+}
+
+.foot-brand p {
+  color: var(--smoke);
+  font-size: 13px;
+  max-width: 260px;
+  line-height: 1.7;
+}
+
+.foot-cols {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.foot-col h5 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--smoke-dim);
+  margin-bottom: 18px;
+}
+
+.foot-col a {
+  display: block;
+  font-size: 14px;
+  color: var(--smoke);
+  margin-bottom: 12px;
+  transition: color 0.3s;
+}
+
+.foot-col a:hover {
+  color: var(--lumen-gold);
+}
+
+.foot-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.foot-bottom span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  color: var(--smoke-dim);
+  letter-spacing: 0.06em;
+}

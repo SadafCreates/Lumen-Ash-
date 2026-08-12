@@ -1,0 +1,105 @@
+.accord-reveal {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(92vw, 620px);
+}
+
+.accord-reveal__ring {
+  position: absolute;
+  width: 140%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    rgba(31, 179, 131, 0.28),
+    rgba(92, 124, 240, 0.28),
+    rgba(164, 104, 224, 0.28),
+    rgba(31, 179, 131, 0.28)
+  );
+  filter: blur(50px);
+  opacity: 0.55;
+  animation: ringSpin 16s linear infinite;
+  z-index: -1;
+}
+
+@keyframes ringSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.accord-reveal__panel {
+  position: relative;
+  width: 100%;
+  padding: 40px 44px 34px;
+  border-radius: 18px;
+  text-align: center;
+  background: rgba(23, 21, 28, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6);
+}
+
+.accord-reveal__panel h3 {
+  margin-top: 16px;
+  font-size: clamp(20px, 2.6vw, 30px);
+  font-weight: 400;
+  color: var(--bone);
+  line-height: 1.35;
+}
+
+.accord-reveal__divider {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 26px auto 22px;
+}
+
+.accord-reveal__divider line {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+}
+
+.accord-reveal__stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.accord-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bone);
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.accord-chip svg {
+  color: var(--lumen-gold);
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .accord-reveal__panel {
+    padding: 30px 22px 26px;
+  }
+}
