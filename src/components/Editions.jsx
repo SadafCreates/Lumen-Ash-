@@ -16,7 +16,7 @@ const EDITIONS = [
     size: '50ML',
     stops: ['#0d3a2a', '#12805c', '#1fb383'],
     bg: 'radial-gradient(120% 100% at 30% 20%, var(--emerald), #0d3a2a 70%)',
-    image: 'public/bottles/green.png', // e.g. '/bottles/ash-edition.png'
+    image: 'bottles/green.png', // e.g. '/bottles/ash-edition.png'
   },
   {
     key: 'lumen',
@@ -25,7 +25,7 @@ const EDITIONS = [
     size: '50ML',
     stops: ['#142862', '#2a4fcc', '#5c7cf0'],
     bg: 'radial-gradient(120% 100% at 30% 20%, var(--sapphire), #142862 70%)',
-    image: 'public/bottles/blue.png', // e.g. '/bottles/lumen-edition.png'
+    image: 'bottles/blue.png', // e.g. '/bottles/lumen-edition.png'
   },
   {
     key: 'dusk',
@@ -34,7 +34,7 @@ const EDITIONS = [
     size: '50ML',
     stops: ['#3a1c58', '#7a3fb0', '#a468e0'],
     bg: 'radial-gradient(120% 100% at 30% 20%, var(--amethyst), #3a1c58 70%)',
-    image: 'public/bottles/purple.png', // e.g. '/bottles/dusk-edition.png'
+    image: 'bottles/purple.png', // e.g. '/bottles/dusk-edition.png'
   },
   {
     key: 'discovery',
@@ -44,7 +44,7 @@ const EDITIONS = [
     stops: ['#12805c', '#2a4fcc', '#7a3fb0'],
     bg: 'radial-gradient(120% 100% at 30% 20%, var(--ash-charcoal-2), #0b0a0d 70%)',
     // faded: true,
-    image: 'public/discovery.png', // e.g. '/bottles/discovery-set.png'
+    image: 'discovery.png', // e.g. '/bottles/discovery-set.png'
   },
 ];
 
