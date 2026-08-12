@@ -16,7 +16,7 @@ const EDITIONS = [
     size: '50ML',
     stops: ['#0d3a2a', '#12805c', '#1fb383'],
     bg: 'radial-gradient(120% 100% at 30% 20%, var(--emerald), #0d3a2a 70%)',
-    image: 'bottles/green.png', // e.g. '/bottles/ash-edition.png'
+    image: 'public/bottles/green.png', // e.g. '/bottles/ash-edition.png'
   },
   {
     key: 'lumen',
@@ -25,7 +25,7 @@ const EDITIONS = [
     size: '50ML',
     stops: ['#142862', '#2a4fcc', '#5c7cf0'],
     bg: 'radial-gradient(120% 100% at 30% 20%, var(--sapphire), #142862 70%)',
-    image: 'bottles/blue.png', // e.g. '/bottles/lumen-edition.png'
+    image: 'public/bottles/blue.png', // e.g. '/bottles/lumen-edition.png'
   },
   {
     key: 'dusk',
